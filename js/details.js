@@ -49,6 +49,10 @@ var client = contentful.createClient({
       p.innerHTML = entry.fields.position; // Set the heading text to the car's title
       playerCard.appendChild(p); // Append the heading to the content div
 
+      var p = document.createElement('p');
+      p.innerHTML = entry.fields.playerProfile; // Set the heading text to the car's title
+      playerCard.appendChild(p); // Append the heading to the content div
+
     // Assuming 'cardsContainer' is the element where we want to display the cars
       // Append the list item to the cardsContainer element
       playerCard.appendChild(li);
